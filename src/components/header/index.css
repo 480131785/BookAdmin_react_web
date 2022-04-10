@@ -1,0 +1,28 @@
+.header-layout-background {
+    margin-bottom: 16px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: #001529;
+}
+
+.user-title {
+    color: #fff;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.out-list {
+    background: #fff;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid #DDD;
+    position: absolute;
+    right: 15px;
+    top: 60px;
+    font-size: 18px;
+    cursor: pointer;
+}
