@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Suspense } from "react";
 import { Spin } from "antd";
 import { routes } from "./routers";
@@ -8,6 +8,7 @@ function LoginRouter() {
     <BrowserRouter>
       <Suspense fallback={<Spin />}>
         <Routes>
+          <Route path="/" element={<Navigate to="/books" />} />
           {routes.map((item) => {
             return item.children ? (
               <Route
