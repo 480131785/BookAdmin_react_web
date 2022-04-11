@@ -1,9 +1,10 @@
 import { FC } from "react";
+import { Typography } from "antd";
 
 interface BooksInfoProps {
   name?: string;
 }
 
 export const BooksInfo: FC<BooksInfoProps> = () => {
-  return <div>书籍信息</div>;
+  return <Typography.Title>书籍信息</Typography.Title>;
 };
