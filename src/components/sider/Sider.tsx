@@ -1,5 +1,5 @@
 import { Layout, Typography, Menu } from "antd";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { navList } from "../nav";
 
@@ -8,10 +8,6 @@ const { Sider } = Layout;
 export const SiderFun = () => {
   const [collapsed, setCollapsed] = useState<boolean>();
   const navigate = useNavigate();
-
-  useEffect(() => {
-    navigate("/books");
-  }, [navigate]);
 
   const onCollapse = (collapsed: boolean) => {
     setCollapsed(collapsed);
