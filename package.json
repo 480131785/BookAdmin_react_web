@@ -19,10 +19,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "cross-env PORT=8188 react-scripts start",
+    "build": "cross-env PORT=8188 react-scripts build",
+    "test": "cross-env PORT=8188 react-scripts test",
+    "eject": "cross-env PORT=8188 react-scripts eject",
   },
   "eslintConfig": {
     "extends": [
@@ -53,6 +53,5 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.4.0",
-    "prettier": "^2.6.2"
   }
 }
