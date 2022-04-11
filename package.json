@@ -22,7 +22,7 @@
     "start": "cross-env PORT=8188 react-scripts start",
     "build": "cross-env PORT=8188 react-scripts build",
     "test": "cross-env PORT=8188 react-scripts test",
-    "eject": "cross-env PORT=8188 react-scripts eject"
+    "eject": "cross-env PORT=8188 react-scripts eject",
   },
   "eslintConfig": {
     "extends": [
@@ -52,6 +52,6 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.29.4",
-    "eslint-plugin-react-hooks": "^4.4.0"
+    "eslint-plugin-react-hooks": "^4.4.0",
   }
 }
