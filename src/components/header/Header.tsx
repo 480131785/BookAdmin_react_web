@@ -20,7 +20,7 @@ export const HeaderFun = () => {
   return (
     <>
       <Header className="header-layout-background">
-        <div className="user-title" id="lsy" onClick={logOut}>
+        <div className="user-title" onClick={logOut}>
           <Avatar size={40} src="https://joeschmoe.io/api/v1/random" />
           <span style={{ fontSize: 16, paddingLeft: 10 }}>LSY(管理员)</span>
         </div>

@@ -1,34 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { lazy, Suspense } from "react";
+import { Suspense } from "react";
 import { Spin } from "antd";
-import App from "../App";
-
-interface RouteList {
-  path: string;
-  component: any;
-  children?: RouteList[];
-}
-
-const routes: RouteList[] = [
-  {
-    path: "/",
-    component: App,
-    children: [
-      {
-        path: "/books",
-        component: lazy(() => import("../pages/booksInfo")),
-      },
-    ],
-  },
-  {
-    path: "/login",
-    component: lazy(() => import("../pages/login")),
-  },
-  {
-    path: "/register",
-    component: lazy(() => import("../pages/register")),
-  },
-];
+import { routes } from "./routers";
 
 function LoginRouter() {
   return (
