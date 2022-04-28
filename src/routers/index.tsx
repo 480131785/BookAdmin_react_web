@@ -2,13 +2,12 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Suspense } from "react";
 import { Spin } from "antd";
 import { routes } from "./routers";
-
 function LoginRouter() {
   return (
     <BrowserRouter>
       <Suspense fallback={<Spin />}>
         <Routes>
-          <Route path="/" element={<Navigate to="/books" />} />
+          <Route path="/" element={<Navigate to="/login" />} />
           {routes.map((item) => {
             return item.children ? (
               <Route

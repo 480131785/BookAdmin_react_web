@@ -6,5 +6,9 @@ interface BooksInfoProps {
 }
 
 export const BooksInfo: FC<BooksInfoProps> = () => {
-  return <Typography.Title>书籍信息</Typography.Title>;
+  return (
+    <>
+      <Typography.Title>书籍信息</Typography.Title>
+    </>
+  );
 };

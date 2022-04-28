@@ -1,0 +1,28 @@
+#root {
+    height: 100%;
+    width: 100%;
+}
+
+.login {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    min-width: 1000px;
+    min-height: 600px;
+    background: url(../../image/wallhaven-n6pjmx.jpg) no-repeat;
+}
+
+.block {
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    opacity: 0.8;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.register {
+    cursor: pointer;
+    color: #2986DC;
+}
