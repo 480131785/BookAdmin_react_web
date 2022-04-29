@@ -20,5 +20,7 @@ module.exports = {
   rules: {
     "@typescript-eslint/no-explicit-any": ["off"],
     "react-hooks/exhaustive-deps": ["off"],
+    "jsx-a11y/anchor-is-valid": ["off"],
+    "@typescript-eslint/no-empty-interface": "off",
   },
 };
